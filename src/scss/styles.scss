@@ -1,28 +1,68 @@
 @import "_variables";
 
 body {
-  background-color: $bg;
+  background-color: $red;
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat", sans-serif;
 
   header {
-    background-color: $bg2;
+    background-color: $white;
     width: 260px;
     height: 100vh;
-    padding: 110px 90px 80px 70px;
+    padding: 50px;
     position: fixed;
     z-index: 3;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .header__title {
+        font-size: 60px;
+        font-weight: 600;
+        color: $red;
+        margin-bottom: 30px;
+      }
+    }
+    p {
+      color: $red;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: $red;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 3px;
+      li {
+        font-size: 14px;
+        border-bottom: 1px solid;
+        opacity: 0.7;
+        font-weight: 600;
+      }
+    }
+    .header__caution {
+      color: gray;
+      font-size: 10px;
+    }
   }
   nav {
     z-index: 2;
-    background-color: white;
+    background-color: hlsa(4, 78%, 57%, 0.95);
     padding-left: 420px;
     display: flex;
     justify-content: center;
     box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
-    opacity: 0.05;
     div {
       margin: 60px 80px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
     }
   }
 }
