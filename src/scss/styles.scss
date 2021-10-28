@@ -5,56 +5,79 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  margin-left: 440px;
+  article {
+    display: flex;
+    flex-direction: column;
+    .content__box {
+      .content__title {
+        display: flex;
+        justify-content: flex-end;
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
 
   header {
     background-color: $white;
-    width: 260px;
+    width: 290px;
     height: 100vh;
-    padding: 50px;
+    padding: 50px 100px 50px 50px;
     position: fixed;
     z-index: 3;
-    div {
+    top: 0;
+    left: 0;
+    .header__title {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      .header__title {
-        font-size: 60px;
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: $red;
+      margin-bottom: 30px;
+    }
+    .header__text {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      h3 {
+        font-size: 1.3rem;
         font-weight: 600;
         color: $red;
-        margin-bottom: 30px;
       }
-    }
-    p {
-      color: $red;
-      margin-top: 10px;
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 20px;
-      font-weight: 600;
-      color: $red;
-    }
-    ul {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 3px;
-      li {
-        font-size: 14px;
-        border-bottom: 1px solid;
-        opacity: 0.7;
+      p {
+        color: $red;
+        margin-top: 40px;
         font-weight: 600;
+        font-size: 1rem;
       }
     }
-    .header__caution {
-      color: gray;
-      font-size: 10px;
+    .nav__bottom {
+      ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3px;
+        margin-top: 60px;
+        li {
+          font-size: 14px;
+          border-bottom: 1px solid;
+          opacity: 0.7;
+          font-weight: 600;
+        }
+      }
+      p {
+        color: gray;
+        font-size: 10px;
+      }
     }
   }
-  nav {
+  .nav__top {
     z-index: 2;
     background-color: hlsa(4, 78%, 57%, 0.95);
-    padding-left: 420px;
     display: flex;
     justify-content: center;
     box-shadow: 0 1px 0 rgb(0 0 0 / 10%);
